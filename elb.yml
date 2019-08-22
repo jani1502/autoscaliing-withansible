@@ -1,0 +1,27 @@
+---
+- hosts: localhost
+  become: yes
+  tasks:
+  - name: i want create elb for istances
+    ec2_elb_lb:
+       name: redgreekwebelb
+       state: present
+       region: us-west-2
+       cross_az_load_balancing: yes
+       listeners:
+         - protocol: http
+           load_balance_port: 80
+           instance_port: 80
+        tags:
+          name: redgeek_elb
+          security_group_ids: sg-05b32a9df718b4001
+          zones: us-west-2b
+        health_check: 
+          ping_protocol: http
+          ping_port: 80
+          ping_path: "/index.html"
+          response_timeout: 5
+          interval: 30
+          unhealthy_threshold: 2
+          healthy_threshold: 2
+
