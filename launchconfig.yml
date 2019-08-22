@@ -4,7 +4,7 @@
   tasks:
   - name: i want create ec2 launch configuration
     ec2_lc:
-     name: mylaunch
+     name: "{{ launch_config }}"
      image_id: ami-0b37e9efc396e4c38
      key_name: jenkins
      security_groups: ['default' ]
