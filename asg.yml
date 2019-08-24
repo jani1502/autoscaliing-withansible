@@ -11,7 +11,7 @@
       health_check_type: ELB
       region: us-west-2
       load_balancers: redgreekwebelb
-      availability_zones: [ 'us-west-2a']
+      availability_zones: [ 'us-west-2b','us-west-2d']
       min_size: 1
       max_size: 1
       desired_capacity: 1
