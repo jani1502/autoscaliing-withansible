@@ -10,12 +10,12 @@
        cross_az_load_balancing: yes
        listeners:
          - protocol: http
-           load_balance_port: 80
+           load_balancer_port: 80
            instance_port: 80
         tags:
           name: redgeek_elb
           security_group_ids: sg-05b32a9df718b4001
-          zones: us-west-2b
+     i     zones: us-west-2b
         health_check: 
           ping_protocol: http
           ping_port: 80
