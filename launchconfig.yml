@@ -1,6 +1,7 @@
 ---
 - hosts: localhost
   become: yes
+  connection: local
   tasks:
   - name: i want create ec2 launch configuration
     ec2_lc:
