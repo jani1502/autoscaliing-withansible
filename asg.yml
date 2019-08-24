@@ -4,7 +4,7 @@
   connection: local
   tasks:
   - name: i want to create autoscalling group 
-    ec2_asg:
+   ec2_asg:
       name: redgreek_web_asg
       launch_config_name: sample
       region: us-west-2
@@ -13,7 +13,7 @@
       min_size: 1
       max_size: 1
       desired_capacity: 1
-      replace_all-instances: no
+      replace_all-instances: yes
       vpc_zone_identifier: [' subnet-88898df1 ']
       tags:
        - type: redgeek_web_server
