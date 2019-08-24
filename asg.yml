@@ -6,6 +6,7 @@
   - name: i want to create autoscalling group 
   - ec2_asg:
       name: redgreek_web_asg
+      launch_config_name: sample
       region: us-west-2
       load_balancers: redgreekwebelb
       availability_zones: [ 'us-west-2b']
