@@ -13,7 +13,7 @@
       min_size: 1
       max_size: 1
       desired_capacity: 1
-      replace_all-instances: yes
+      replace_all-instances: no
       vpc_zone_identifier: [' subnet-88898df1 ']
       tags:
        - type: redgeek_web_server
