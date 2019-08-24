@@ -4,7 +4,7 @@
   connection: local
   tasks:
   - name: i want to create autoscalling group 
-  - ec2_asg:
+    ec2_asg:
       name: redgreek_web_asg
       launch_config_name: sample
       region: us-west-2
