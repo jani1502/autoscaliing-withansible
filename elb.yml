@@ -12,11 +12,11 @@
          - protocol: http
            load_balancer_port: 80
            instance_port: 80
-        tags:
+       tags:
           name: redgeek_elb
           security_group_ids: sg-05b32a9df718b4001
-     i     zones: us-west-2b
-        health_check: 
+          zones: us-west-2b
+       health_check: 
           ping_protocol: http
           ping_port: 80
           ping_path: "/index.html"
