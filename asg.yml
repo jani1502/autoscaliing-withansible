@@ -16,7 +16,7 @@
       max_size: 1
       desired_capacity: 1
       replace_all_instances: yes
-      vpc_zone_identifier: [' subnet-88898df1 ']
+      vpc_zone_identifier: [' subnet-88898df1 ','subnet-194dc332' ]
       tags:
        - type: redgeek_web_server
          wait_for_instances: yes   
