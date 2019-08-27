@@ -6,7 +6,7 @@
   - name: i want to create autoscalling group 
     ec2_asg:
       name: redgreek_web_asg
-      launch_config_name: sample2
+      launch_config_name: sample3
       health_check_period: 60
       health_check_type: ELB
       region: us-west-2

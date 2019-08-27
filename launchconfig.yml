@@ -5,10 +5,10 @@
   tasks:
   - name: i want create ec2 launch configuration
     ec2_lc:
-     name: sample2
+     name: sample3
      image_id: ami-0b37e9efc396e4c38
      key_name: jenkins
      security_groups: ['default' ]
      instance_type: t1.micro
      region: us-west-2
-     user_data_path: /home/jenkins/user_data
+     user_data_path: /root/user_data
